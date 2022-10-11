@@ -14,7 +14,7 @@ contract Ownable{
     event OwnershipTransferred(address indexed previousOwner , address indexed newOwner) ;
 
     constructor() {
-        owner == msg.sender ;
+        owner = msg.sender ;
     }
 
     // modifier for owner check 
